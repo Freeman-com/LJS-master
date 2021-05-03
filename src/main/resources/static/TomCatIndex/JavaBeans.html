@@ -1,0 +1,334 @@
+<!DOCTYPE html  "about:legacy-compat">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/tomcat.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <title>LJS - JavaBeans</title>
+    <meta name="A.Kozinov" content="LJS Project">
+</head>
+
+<body>
+<div id="wrapper">
+    <header id="header">
+        <div class="clearfix">
+            <div class="menu-toggler pull-left" tabindex="1">
+                <div class="hamburger">
+                </div>
+            </div>
+            <!--Logo-->
+            <a href="LJS_HomePage.html">
+                <img class="tomcat-logo pull-left noPrint" alt="LJS Home" src="img/tomcat.png">
+            </a>
+            <!--End Logo-->
+            <h1 class="pull-left">LJS<sup>®</sup>&nbsp;&nbsp;&nbsp;Java Beans</h1>
+            <!--Right Logo-->
+            <div class="asf-logos pull-right">
+                <a href="LJS_HomePage.html" target="_blank" class="pull-left">
+                    <img src="img/SupportApache-small.png" class="support-asf" alt="Support Apache">
+                </a>
+                <a href="LJS_HomePage.html" target="_blank" class="pull-left">
+                    <img src="img/asf_logo.svg" class="asf-logo" alt="LJS Software Foundation">
+                </a>
+            </div>
+            <!--End Right Logo-->
+        </div>
+    </header>
+    <main id="middle">
+        <div>
+            <!--Left Toolbar-->
+            <div id="mainLeft">
+                <div id="nav-wrapper">
+                    <nav>
+                        <div><h2>Another Resourses</h2>
+                            <ul>
+                                <li><a href="LJS_HomePage.html">Home</a></li>
+                                <li><a href="https://github.com/Kozinov-A/LJS.git">GitHub</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Documentation Basic</h2>
+                            <ul>
+                                <li><a href="Begin.html">Введение</a></li>
+                                <li><a href="#">Наследование</a></li>
+                                <li><a href="#">Полиморфизм</a></li>
+                                <li><a href="Recursion.html">Рекурсия</a></li>
+                                <li><a href="#">Перегрузка методов</a></li>
+                                <li><a href="#">HTML form</a></li>
+                                <li><a href="#">Serializable</a></li>
+                                <li><a href="#">doGet / doPost</a></li>
+                                <li><a href="#">DAO + Factory</a></li>
+                                <li><a href="#">API + REST API</a></li>
+                                <li><a href="#">JDBC Connection</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Documentation Main</h2>Enterprise JavaBeans
+                            <ul>
+                                <li><a href="#">Entity</a></li>
+                                <li><a href="Generics.html">Generics</a></li>
+                                <li><a href="Hibernate.html">Hibernate</a></li>
+                                <li><a href="EnterpriseJavaBeans.html"><b>JavaBeans</b></a></li>
+                                <li><a href="EnterpriseJavaBeans.html"><b>Enterprise JavaBeans</b></a></li>
+                                <li><a href="CRUD.html">CRUD методы</a></li>
+                                <li><a href="DTO.html">DTO классы</a></li>
+                                <li><a href="DAO.html">DAO классы</a></li>
+                                <li><a href="IoC.html">InversionOfControl(IoC)</a></li>
+                                <li><a href="DI.html">Dependency Injection(DI)</a></li>
+                                <li><a href="JPAinSpring.html">JavaPersistenceAPI(JPA)</a></li>
+                                <li><a href="#">Один ко многим</a></li>
+                                <li><a href="#">Многие ко многим</a></li>
+                            </ul>
+                            <div>
+                                <h2>Problems?</h2>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Find help</a></li>
+                                    <li><a href="#">Mailing Lists</a></li>
+                                    <li><a href="#">Bug Database</a></li>
+                                    <li><a href="#">Security Reports</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Media</h2>
+                                <ul>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">YouTube</a></li>
+
+                                </ul>
+                            </div>
+                            <div><h2>Project</h2>
+                                <ul>
+                                    <li><a href="https://github.com/Kozinov-A/ABS.git">ABS Project</a></li>
+                                    <li><a href="SpringFramework.html">Spring Project</a></li>
+                                    <li><a href="JavaEE_Authorization_Project.html">JavaEE Project</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--End Left Toolbar-->
+            <div id="mainRight">
+                <div id="content">
+                    <h2 style="display: none;">Content</h2>
+                    <h3 id="Apache_Tomcat">Java Beans</h3>
+                    <div class="text">
+                        <p><em>Не путать с <a href="EnterpriseJavaBeans.html">Enterprise JavaBeans</a>.</em>
+                        <hr>
+                        <p><em><b>JavaBeans</b> — это классы в языке Java, написанные по определённым правилам. Они
+                            используются для
+                            объединения нескольких объектов в один (англ. bean — фасоль, кофейное зерно) для удобной
+                            передачи данных.</em>
+
+                        <p><em><b>Sun Microsystems</b> определяет <b>JavaBeans</b> как повторно используемые программные
+                            компоненты, которыми можно управлять, используя графические конструкторы и средства IDE.
+
+                            JavaBeans обеспечивают основу для многократно используемых, встраиваемых и модульных
+                            компонентов ПО. </em>
+
+                        <p><em> <b>JavaBeans</b> могут принимать различные формы, но наиболее широко они
+                            применяются в элементах графического пользовательского интерфейса. </em>
+                        <hr>
+                        <p><em>
+                            <b>Одна из целей создания
+                                JavaBeans</b> — взаимодействие с похожими компонентными структурами. Например,
+                            Windows-программа, при наличии соответствующего моста или объекта-обёртки, может
+                            использовать компонент JavaBeans так, будто бы он является компонентом COM или ActiveX.</em>
+                        <hr>
+                    </div>
+
+                    <h3 id="News">Правила описания JavaBean</h3>
+                    <div class="text">
+                        <p>Чтобы класс мог работать как bean, он должен соответствовать определённым соглашениям об
+                            именах методов, конструкторе и поведении. Эти соглашения дают возможность создания
+                            инструментов, которые могут использовать, замещать и соединять JavaBeans.
+
+                        <p>Правила описания гласят:
+
+                        <ul>
+                            <li><em>Класс должен иметь конструктор без параметров, с модификатором доступа public. Такой
+                                конструктор позволяет инструментам создать объект без дополнительных сложностей с
+                                параметрами.</em>
+                            </li>
+                            <li><em>Свойства класса должны быть доступны через get, set и другие методы (так называемые
+                                методы
+                                доступа), которые должны подчиняться стандартному соглашению об именах. Это легко
+                                позволяет
+                                инструментам автоматически определять и обновлять содержание bean’ов. Многие инструменты
+                                даже имеют специализированные редакторы для различных типов свойств.</em>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li><em>Класс должен быть сериализуем. Это даёт возможность надёжно сохранять, хранить и
+                                восстанавливать состояние bean независимым от платформы и виртуальной машины
+                                способом.</em>
+                            </li>
+                            <li><em> Класс должен иметь переопределенные методы equals(), hashCode() и toString().</em>
+                            </li>
+                        </ul>
+                        <p>Так как требования в основном изложены в виде соглашения, а не интерфейса, некоторые
+                            разработчики рассматривают JavaBeans, как Plain Old Java Objects, которые следуют
+                            определённым правилам именования.
+
+                    </div>
+                    <h3 id="Example">Пример</h3>
+                    <div class="text">
+
+                        <p>
+                        <pre><span></span><span class="lineno"> 1 </span><span class="c1">// PersonBean.java</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kd">class</span> <span
+                                    class="nc">PersonBean</span> <span class="kd">implements</span> <span
+                                    class="n">java</span><span class="p">.</span><span class="na">io</span><span
+                                    class="p">.</span><span class="na">Serializable</span> <span class="p">{</span>
+<span class="lineno"> 4 </span>    <span class="kd">private</span> <span class="n">String</span> <span
+                                    class="n">name</span><span class="p">;</span>
+<span class="lineno"> 5 </span>    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">deceased</span><span
+                                    class="p">;</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>    <span class="c1">// Методы геттеры (get) и сеттеры (set)</span>
+<span class="lineno"> 8 </span>    <span class="kd">public</span> <span class="n">String</span> <span
+                                    class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno"> 9 </span>        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+<span class="lineno">10 </span>    <span class="p">}</span>
+<span class="lineno">11 </span>    <span class="kd">public</span> <span class="kt">void</span> <span
+                                    class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span
+                                    class="n">name</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">12 </span>        <span class="k">this</span><span class="p">.</span><span
+                                    class="na">name</span> <span class="o">=</span> <span class="n">name</span><span
+                                    class="p">;</span>
+<span class="lineno">13 </span>    <span class="p">}</span>
+<span class="lineno">14 </span>    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isDeceased</span><span
+                                    class="p">()</span> <span class="p">{</span>
+<span class="lineno">15 </span>        <span class="k">return</span> <span class="n">deceased</span><span
+                                    class="p">;</span>
+<span class="lineno">16 </span>    <span class="p">}</span>
+<span class="lineno">17 </span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setDeceased</span><span
+                                    class="p">(</span><span class="kt">boolean</span> <span
+                                    class="n">deceased</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">18 </span>        <span class="k">this</span><span class="p">.</span><span
+                                    class="na">deceased</span> <span class="o">=</span> <span
+                                    class="n">deceased</span><span class="p">;</span>
+<span class="lineno">19 </span>    <span class="p">}</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>    <span class="c1">//Переопределенные методы equals() и hashCode()</span>
+<span class="lineno">22 </span>    <span class="nd">@Override</span>
+<span class="lineno">23 </span>    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span
+                                    class="p">(</span><span class="n">Object</span> <span class="n">o</span><span
+                                    class="p">)</span> <span class="p">{</span>
+<span class="lineno">24 </span>        <span class="k">if</span> <span class="p">(</span><span
+                                    class="k">this</span> <span class="o">==</span> <span class="n">o</span><span
+                                    class="p">)</span> <span class="p">{</span>
+<span class="lineno">25 </span>            <span class="k">return</span> <span class="kc">true</span><span
+                                    class="p">;</span>
+<span class="lineno">26 </span>        <span class="p">}</span>
+<span class="lineno">27 </span>        <span class="k">if</span> <span class="p">(</span><span class="n">o</span> <span
+                                    class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span
+                                    class="n">getClass</span><span class="p">()</span> <span class="o">!=</span> <span
+                                    class="n">o</span><span class="p">.</span><span class="na">getClass</span><span
+                                    class="p">())</span> <span class="p">{</span>
+<span class="lineno">28 </span>            <span class="k">return</span> <span class="kc">false</span><span
+                                    class="p">;</span>
+<span class="lineno">29 </span>        <span class="p">}</span>
+<span class="lineno">30 </span>
+<span class="lineno">31 </span>        <span class="n">PersonBean</span> <span class="n">that</span> <span
+                                    class="o">=</span> <span class="p">(</span><span class="n">PersonBean</span><span
+                                    class="p">)</span> <span class="n">o</span><span class="p">;</span>
+<span class="lineno">32 </span>
+<span class="lineno">33 </span>        <span class="k">if</span> <span class="p">(</span><span class="n">deceased</span> <span
+                                    class="o">!=</span> <span class="n">that</span><span class="p">.</span><span
+                                    class="na">deceased</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">34 </span>            <span class="k">return</span> <span class="kc">false</span><span
+                                    class="p">;</span>
+<span class="lineno">35 </span>        <span class="p">}</span>
+<span class="lineno">36 </span>        <span class="k">return</span> <span class="o">!</span><span
+                                    class="p">(</span><span class="n">name</span> <span class="o">!=</span> <span
+                                    class="kc">null</span> <span class="o">?</span> <span class="o">!</span><span
+                                    class="n">name</span><span class="p">.</span><span class="na">equals</span><span
+                                    class="p">(</span><span class="n">that</span><span class="p">.</span><span
+                                    class="na">name</span><span class="p">)</span> <span class="p">:</span> <span
+                                    class="n">that</span><span class="p">.</span><span class="na">name</span> <span
+                                    class="o">!=</span> <span class="kc">null</span><span class="p">);</span>
+<span class="lineno">37 </span>
+<span class="lineno">38 </span>    <span class="p">}</span>
+<span class="lineno">39 </span>
+<span class="lineno">40 </span>    <span class="nd">@Override</span>
+<span class="lineno">41 </span>    <span class="kd">public</span> <span class="kt">int</span> <span
+                                    class="nf">hashCode</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">42 </span>        <span class="kt">int</span> <span class="n">result</span> <span
+                                    class="o">=</span> <span class="n">name</span> <span class="o">!=</span> <span
+                                    class="kc">null</span> <span class="o">?</span> <span class="n">name</span><span
+                                    class="p">.</span><span class="na">hashCode</span><span class="p">()</span> <span
+                                    class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">43 </span>        <span class="n">result</span> <span class="o">=</span> <span class="mi">31</span> <span
+                                    class="o">*</span> <span class="n">result</span> <span class="o">+</span> <span
+                                    class="p">(</span><span class="n">deceased</span> <span class="o">?</span> <span
+                                    class="mi">1</span> <span class="p">:</span> <span class="mi">0</span><span
+                                    class="p">);</span>
+<span class="lineno">44 </span>        <span class="k">return</span> <span class="n">result</span><span
+                                    class="p">;</span>
+<span class="lineno">45 </span>    <span class="p">}</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span>    <span class="c1">//Переопределенный метод toString()</span>
+<span class="lineno">48 </span>    <span class="nd">@Override</span>
+<span class="lineno">49 </span>    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span
+                                    class="p">()</span> <span class="p">{</span>
+<span class="lineno">50 </span>        <span class="k">return</span> <span class="s">"PersonBean{"</span> <span
+                                    class="o">+</span>
+<span class="lineno">51 </span>                <span class="s">"name='"</span> <span class="o">+</span> <span class="n">name</span> <span
+                                    class="o">+</span> <span class="sc">'\''</span> <span class="o">+</span>
+<span class="lineno">52 </span>                <span class="s">", deceased="</span> <span class="o">+</span> <span
+                                    class="n">deceased</span> <span class="o">+</span>
+<span class="lineno">53 </span>                <span class="sc">'}'</span><span class="p">;</span>
+<span class="lineno">54 </span>    <span class="p">}</span>
+<span class="lineno">55 </span><span class="p">}</span>
+</pre>
+
+                    </div>
+                    <h3 id="Example2">Пример 2</h3>
+                    <div class="text">
+
+                        <p>
+                        <pre><span></span><span class="c1">// TestPersonBean.java</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestPersonBean</span> <span
+                                    class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span
+                                    class="nf">main</span><span class="p">(</span><span class="n">String</span><span
+                                    class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span
+                                    class="p">{</span>
+
+        <span class="n">PersonBean</span> <span class="n">person</span> <span class="o">=</span> <span
+                                    class="k">new</span> <span class="n">PersonBean</span><span class="p">();</span>
+        <span class="n">person</span><span class="p">.</span><span class="na">setName</span><span
+                                    class="p">(</span><span class="s">"Bob"</span><span class="p">);</span>
+        <span class="n">person</span><span class="p">.</span><span class="na">setDeceased</span><span class="p">(</span><span
+                                    class="kc">true</span><span class="p">);</span>
+
+        <span class="c1">// Результат: "Bob [deceased]"</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span
+                                    class="na">print</span><span class="p">(</span><span class="n">person</span><span
+                                    class="p">.</span><span class="na">getName</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span
+                                    class="na">println</span><span class="p">(</span><span class="n">person</span><span
+                                    class="p">.</span><span class="na">isDeceased</span><span class="p">()</span> <span
+                                    class="o">?</span> <span class="s">" [deceased]"</span> <span
+                                    class="p">:</span> <span class="s">" [alive]"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        Copyright © 2020-2020, LJS
+        <br>
+    </footer>
+</div>
+<script src="js/tomcat.js.download"></script>
+</body>
+</html>
